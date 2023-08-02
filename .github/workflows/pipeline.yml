@@ -16,9 +16,9 @@ jobs:
     steps:
       - name: Checkout for build
         uses: actions/checkout@v2
-      - name: Create artifact
+      - name: Upload
         uses: actions/upload-artifact@v2
         with:
-          name: ${{ env.ARTIFIACT_NAME }}
+          name: ${{ env.ARTIFACT_NAME }}
           path: .
         
